@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 
 // COLOR CONSTANTS
 const primaryColor = Color(0xffF4C27F);
-const primaryGradientColor = LinearGradient(
-  colors: [
-    Color(0xffD8605B),
-    Color(0xffF4C27F),
-  ],
-);
+const secondaryColor = Color(0xffD8605B);
 
 // TEXT CONSTANTS
 
