@@ -4,6 +4,7 @@ import 'package:todo_app/screens/login_screen.dart';
 
 import '../constants.dart';
 import '../widgets/auth_textfield.dart';
+import '../widgets/default_elevated_button.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -75,26 +76,15 @@ class RegisterScreen extends StatelessWidget {
                   hintText: 'Confirm password',
                 ),
                 const SizedBox(height: 20),
-                ElevatedButton(
-                  onPressed: () => Navigator.push(
+                DefaultElevatedButton(
+                  color: secondaryColor,
+                  text: 'Register',
+                  textColor: Colors.white,
+                  textFontSize: 20,
+                  press: () => Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (context) => const DashboardScreen(),
-                    ),
-                  ),
-                  child: const Text('Register'),
-                  style: ElevatedButton.styleFrom(
-                    primary: secondaryColor,
-                    textStyle: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    minimumSize: const Size(
-                      double.infinity,
-                      50,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
                     ),
                   ),
                 ),
